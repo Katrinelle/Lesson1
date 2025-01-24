@@ -58,9 +58,12 @@
 
 //Число
 
+// console.log(1 + 2)
+
 // приведення до числа
 
 // const value = "3";
+// console.log(typeof value)
 // console.log(Number(value)); // 3
 // console.log(typeof Number(value));
 
@@ -257,8 +260,13 @@
 
 // Об*єкти
 
+// let obj = {
+//   city: "Kyiv",
+//   age: "1500",
+// };
+
 // let user = {
-//   // об’єкт
+//   //   // об’єкт
 //   name: "Іван", // за ключем "name" зберігаємо значення "Іван"
 //   age: 30, // за ключем "age" зберігати значення "30"
 //   work: true,
@@ -287,6 +295,10 @@
 // };
 
 // delete user.age;
+
+// console.log(user);
+
+// console.log(user["likes birds"]);
 
 // це викличе синтаксичну помилку
 // user.likes birds = true
