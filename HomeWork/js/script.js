@@ -24,11 +24,16 @@
 // let a = "5";
 // let b = "13cvb";
 // let c = "12.9sxdcfgv";
-// вивести в консоль тип
 
-// console.log(typeof Number(a));
-// console.log(typeof parseInt(b));
-// console.log(typeof parseFloat(c));
+// console.log(Number.parseInt(a)); // 5
+// console.log(Number.parseInt(b)); // 13
+// console.log(Number.parseInt(c)); // 12
+
+// // вивести в консоль тип
+
+// console.log(typeof "a"); // string
+// console.log(typeof "b"); // string
+// console.log(typeof "c"); // string
 
 //***4***
 //Зробіть, щоб 0.1 + 0.2 = 0.3
@@ -43,7 +48,7 @@
 //***6**
 //Поверніть випадкове число в діапазоні від 2 до 4
 
-// console.log(Math.random() * (4 - 2) + 2);
+// console.log(Math.random() * (4 - 2) + 2); // 2.37217769386
 
 //***7**
 //дізнатись довжину message
@@ -53,7 +58,8 @@
 //***8**
 //вивести в консоль message  великими літерами
 
-// console.log(message.toUpperCase());
+// let message = "message";
+// console.log(message.toUpperCase()); // MESSAGE
 
 //***9**
 // створити пустий об*єкт
@@ -62,38 +68,21 @@
 
 // let user = {};
 // user.name = "Ivan";
-// user.age = "10";
+// user.age = 10;
 // user.city = "Kyiv";
+// console.log(user); // age:10 city: "Kyiv" name: "Ivan"
 
-// console.log(user);
+// // видалити місто
 
-// видалити місто
-// let user = {};
-// user.name = "Ivan";
-// user.age = "10";
-// user.city = "Kyiv";
-
-// console.log(user);
 // delete user.city;
-// додати буль з ключем: like flowers
-// let user = {};
-// user.name = "Ivan";
-// user.age = "10";
-// user.city = "Kyiv";
+// console.log(user); // age:10 name: "Ivan"
 
-// console.log(user);
-// delete user.city;
+// // додати буль з ключем: like flowers
+
 // user["likes flowers"] = true;
 
-// вивести результат в консоль
-// let user = {};
-// user.name = "Ivan";
-// user.age = "10";
-// user.city = "Kyiv";
-// console.log(user);
-// delete user.city;
-// user["likes flowers"] = true;
-// console.log(user);
+// // вивести результат в консоль
+// console.log(user); // age:10 likes flowers: true name: "Ivan"
 
 //***10**
 // За допомогою циклу  “for…in” вивести в консоль ключі і значення об*єкта
@@ -106,4 +95,4 @@
 // for (key in user) {
 //   console.log(key);
 //   console.log(user[key]);
-// }
+// } // name Ivan age 10 likes flowers true
